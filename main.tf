@@ -91,5 +91,5 @@ resource "azurerm_virtual_machine_data_disk_attachment" "copy-disk-attach" {
   managed_disk_id = azurerm_managed_disk.copy-disk.id
   virtual_machine_id = azurerm_virtual_machine.new-vm-with-attached-disk.id
   lun = "1"
-  caching = "ReadWrite"
+  caching = "None"
 }
